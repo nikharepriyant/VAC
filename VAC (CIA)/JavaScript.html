@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Day-3</title>
+</head>
+<body>
+    <h2>The onclick Event</h2>
+    <p>The onclick event triggers a function when an element is clicked on.</p>
+    <p>Click to trigger a function that will output "Hello, Priyant Prashant Nikhare.":</p>
+    <button onclick="myFunction1()">Click me</button>
+    <h3 id="click"></h3>
+    <h2>The getElementByID() Method</h2>
+    <h3 id="demo"></h3>
+    <h3 id="name"></h3>
+    <h3 id="result"></h3>
+    <h2>Arrays</h2>
+    <h3 id="cars"></h3>
+    <h2>If-else</h2>
+    <p>A time-based greeting:</p>
+    <p id="greeting"></p>
+    <script>
+        console.log("Hello, I am Priyant P. Nikhare.")
+        // alert("Happy New Year 2K24!!")
+        // confirm("Are you ok?")
+        const x = '10'  // (string) 
+        const y = 10    // (number)
+        console.log(x)
+        console.log(typeof x)
+        console.log(y)
+        console.log(typeof y)
+        for (let index = 0; index <= 5; index++) {
+            console.log(index)
+        }
+        let name = "Priyant P. Nikhare"
+        const pi = 3.14;
+        console.log(pi)
+        document.getElementById("demo").innerHTML = pi;
+        console.log(name)
+        console.log(typeof name)
+        document.getElementById("name").innerHTML = name;
+        function myFunction(p1, p2) {
+            return p1 * p2;
+        }
+        let result = myFunction(5, 7);
+        console.log(result)
+        document.getElementById("result").innerHTML = result;
+        function myFunction1() {
+            document.getElementById("click").innerHTML = "Hello, Priyant Prashant Nikhare.";
+        }
+        const cars = ["Audi", "Jaguar", "BMW"];
+        console.log(cars)
+        document.getElementById("cars").innerHTML = cars;
+        const time = new Date().getHours();
+        let greeting;
+        if (time < 12) {
+            greeting = "Good morning!";
+        } else if (time < 17) {
+            greeting = "Good afternoon!";
+        } else {
+            greeting = "Good evening!";
+        }
+        console.log(time)
+        console.log(greeting)
+        document.getElementById("greeting").innerHTML = greeting;
+    </script>
+</body>
+</html>

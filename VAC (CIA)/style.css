@@ -1,0 +1,32 @@
+body{
+    font-family: Arial, sans-serif;
+}
+.container{
+   border: 1px;
+   border-width: 2px;
+   border-color: black;
+}
+.contact-form{
+    max-width: 20px;
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    text-align: left;
+}
+.form-input{
+    padding: 1px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.submit-button{
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.submit-button.hover{
+    background-color: #45a049;
+}
